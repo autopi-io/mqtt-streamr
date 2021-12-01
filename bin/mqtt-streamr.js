@@ -23,7 +23,7 @@ const options = require('yargs')
         describe: 'Topic/path to subscribe to. Give this option multiple times to subscribe to several topics. Can include wildcards.',
     })
     .option('private-key', {
-        default: undefined,
+        default: process.env.USER_ID,
         describe: 'Ethereum private key of the user to authenticate as.',
     })
     .option('verbose', {
